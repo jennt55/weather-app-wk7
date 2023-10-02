@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background: #e0ffcd;
 }
 
 .weather-box {
@@ -10,6 +11,7 @@ body {
   border: solid #e4e7ec;
   border-radius: 6px;
   max-width: 600px;
+  background: #fff;
 }
 
 footer {
@@ -37,4 +39,21 @@ li {
   font-size: 14px;
   font-weight: 100;
   line-height: 19px;
+}
+
+.weather-temperature img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
+}
+.weather-temperature strong {
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.weather-temperature small {
+  position: relative;
+  font-size: 16px;
+  top: -32px;
 }
