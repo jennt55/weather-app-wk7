@@ -16,6 +16,21 @@
   <body>
     <div class="container">
       <div class="weather-box">
+        <form id="search-form" class="mb-3">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city name here"
+                class="form-control"
+                id="city-input"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="search" class="btn btn-primary" />
+            </div>
+          </div>
+        </form>
         <h1 id="city"></h1>
         <ul>
           <li id="date-time">Date and time</li>
