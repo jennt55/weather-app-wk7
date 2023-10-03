@@ -16,10 +16,10 @@
   <body>
     <div class="container">
       <div class="weather-box">
-        <h1>New York</h1>
+        <h1 id="city"></h1>
         <ul>
-          <li>Monday 10:18</li>
-          <li>Clear</li>
+          <li id="date-time">Monday 10:18</li>
+          <li id="description"></li>
         </ul>
         <div class="row">
           <div class="col-md-6">
@@ -31,7 +31,7 @@
               <div>
                 <strong id="temperature"></strong
                 ><span class="units">
-                  <strong>12</strong>
+                  <strong id="temperature"></strong>
                   <small>°C | <a href="#">°F</a></small>
                 </span>
               </div>
@@ -39,9 +39,8 @@
           </div>
           <div class="col-md-6">
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 50%</li>
-              <li>Wind Speed: 2mph</li>
+              <li id="humidity">What is the humidity?</li>
+              <li id="wind-speed">What is the wind speed?</li>
             </ul>
           </div>
         </div>
