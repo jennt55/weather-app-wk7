@@ -59,15 +59,16 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-let form = document.querySelector("#search-form");
-form.addEventListener("submit", handleSubmit);
-
-search("New York");
 function showFahrenheitTemperature(event) {
   event.preventDefault();
   let fahrenheitTemperature = (14 * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
-  temperature.innerHTML = Math.round(fahrenheitTemperature);
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
+
+search("New York");
+
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
