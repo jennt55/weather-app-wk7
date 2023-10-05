@@ -25,24 +25,25 @@ function formatDate(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
+
   let forecastElement = document.querySelector("#weather-forecast");
   let forecastHTML = `<div class="row">`;
-  let days = ["Thurs", "Fri", "Sat"];
-  days.forEach(function (day) {
+
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       `
       <div class="col-2">
-        <div class="date">${day}</div>
+        <div class="date">${forecastDay.time}</div>
         <img
-          src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-night.png"
+          src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png"
           alt="weather icon"
           width="42px"
         />
         <div class="weather-forecast-temperatures">
-          <span class="forecast-temp-max"> 18 </span>
-          <span class="forecast-temp-min">12</span>
+          <span class="forecast-temp-max">${forecastDay.temperature.maximum}° </span>
+          <span class="forecast-temp-min">${forecastDay.temperature.minimum}°</span>
         </div>
       </div>
     
