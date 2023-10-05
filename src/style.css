@@ -58,3 +58,21 @@ li {
   font-size: 16px;
   top: -32px;
 }
+
+.weather-forecast {
+  margin: 20px;
+  text-align: center;
+}
+
+.date {
+  font-size: 16px;
+  color: #455d7a;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+
+.forecast-temp-min {
+  color: #455d7a;
+}
